@@ -20,7 +20,7 @@ def get_db():
         host="mysql-34014e96-osbornmatthew.i.aivencloud.com",
         port=22276,
         user="avnadmin",
-        password="AVNS_7mQ80zqZuSLI5Sx0JPR",
+        password="AVNS_mgMuswtusFYzjDUarDJ",
         database="defaultdb",
         ssl_disabled=False
     )
