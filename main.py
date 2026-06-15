@@ -5,6 +5,9 @@ from typing import Optional
 import mysql.connector
 import hashlib
 
+
+app = FastAPI(title="SRMS - Osborn Matthew A I")
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
@@ -12,16 +15,6 @@ app.add_middleware(
     ],
     allow_credentials=True,
     allow_methods=["*"],
-    allow_headers=["*"],
-)
-
-app = FastAPI(title="SRMS - Osborn Matthew A I")
-
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=False,
-    allow_methods=["GET","POST","PUT","DELETE","OPTIONS","HEAD"],
     allow_headers=["*"],
 )
 
